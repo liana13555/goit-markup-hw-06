@@ -315,7 +315,7 @@
           </address> 
         </div>            
         <div class="social">
-          <p class="text">присоединяйтесь</p>
+          <p class="text">Присоединяйтесь</p>
           <ul class="join">
             <li>
             <a href="" class="link">
@@ -343,10 +343,35 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p>Подпишитесь на рассылку</p>
+          <label for="mail">Почта</label>
+          <input type="email" name="mail">
+          <button type="submit">Подписаться</button>
+          
+        </div>
       </div>
     </footer>  
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form>
+          <label for="name">Имя</label>
+          <input type="text" name="user-name" id="name">
+         
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel">
+          
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="mail">
+          
+          <label for="comment">Комментарий</label>
+          <textarea name="comment" id="comment" rows="10"></textarea>
+
+          <input type="checkbox" name="policy" id="policy">
+          <label for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          
+          <button type="submit">Отправить</button>
+        </form>
         <button class="button-close" data-modal-close>
           <svg class="icon" width="11px" height="11px">
             <use href="./images/sprite.svg#icon-close"></use>
@@ -357,4 +382,4 @@
     </div> 
     <script src="./js/modal.js"></script>
 </body>
-</html>
+</html> 
