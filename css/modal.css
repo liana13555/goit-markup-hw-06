@@ -47,9 +47,26 @@
   height: 30px;
   padding: 6px;
 
+  display: flex;
+  justify-content: center;
+
+  color: var(--primary-black-color);
   background-color: var(--white-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);  
+  cursor: pointer;
+  outline: none;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.icon-close {
+  fill: currentColor;
+}
+
+.button-close:hover,
+.button-close:focus {
+  color: var(--accent-color);
 }
 
 .form-order {
@@ -64,6 +81,9 @@
 
 .form-field .label{
   margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .form-field .input {
@@ -72,11 +92,14 @@
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
- 
+  
+  color: var(--title-text-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-  color: var(--title-text-color);
+  outline: none;
+  
+  transition: border 250ms var(--timing-function);
 }
 
 .form-field .icon {
@@ -84,13 +107,17 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+
+  transition: fill 250ms var(--timing-function);
 }
 
-.form-field .input:focus {
+.form-field .input:focus,
+.form-field .input:hover {
   border: 1px solid var(--accent-color)
 }
 
-.form-field .input:focus ~ .icon {
+.form-field .input:focus ~ .icon,
+.form-field .input:hover ~ .icon {
   fill: var(--accent-color);
 }
 
@@ -107,15 +134,21 @@
 
 .form-field .comment {
   padding: 12px 16px;
+  
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  
-  color: rgba(117, 117, 117, 0.5);
+  transition: border 250ms var(--timing-function);
+}
+
+.form-field .comment:focus,
+.form-field .comment:hover {
+  border: 1px solid var(--accent-color)
 }
 
 .form-field .input-wrapper {
@@ -192,6 +225,7 @@
   cursor: pointer;
 
   transition: background-color 250ms var(--timing-function);
+  outline: none;
 }
 
 .button-send:hover,

@@ -343,13 +343,18 @@
             </li>
           </ul>
         </div>
-        <div>
-          <p>Подпишитесь на рассылку</p>
-          <label for="mail">Почта</label>
-          <input type="email" name="mail">
-          <button type="submit">Подписаться</button>
-          
-        </div>
+        <form class="form-footer" autocomplete="off">
+          <b class="form-text">Подпишитесь на рассылку</b>
+
+          <div class="subscribe">
+            <input class="input-subscribe" type="email" name="mail" placeholder="E-mail">
+            <button class="button-subscribe" type="submit">Подписаться
+              <svg class="icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>        
       </div>
     </footer>  
     <!-- Модальное окно -->
@@ -391,7 +396,7 @@
           </div>
 
           <div class="form-field">
-            <label for="comment">Комментарий</label>
+            <label class="label" for="comment">Комментарий</label>
             <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
           </div>
 
@@ -410,7 +415,7 @@
         </form>
 
         <button class="button-close" data-modal-close>
-          <svg class="icon-close" width="11px" height="11px">
+          <svg class="icon-close" width="18px" height="18px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
