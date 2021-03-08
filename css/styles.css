@@ -148,7 +148,6 @@
 /* Team */
 
 .section.team {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
@@ -227,7 +226,7 @@
   color: var(--icon-color);
   border-radius: 50%;
 
-  transition: background-color 250ms, color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 } 
 
 .social-links .icon {
@@ -268,7 +267,7 @@
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 
-  transition: color 250ms, border 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 } 
 
 .clients .icon {
